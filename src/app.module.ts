@@ -8,11 +8,11 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    TypeOrmModule.forRoot(configService.getTypeOrmConfig()),
+    //TypeOrmModule.forRoot(configService.getTypeOrmConfig()),
   ],
   controllers: [AppController],
   providers: [],
 })
 export class AppModule {
-  constructor(private readonly connection: Connection) {}
+  //constructor(private readonly connection: Connection) {}
 }
